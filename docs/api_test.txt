@@ -1,0 +1,67 @@
+DG1 - API TEST
+MSSV: 2412111060
+Ho ten: Phong Vu
+
+1. GET /api/health
+Command:
+curl -i http://localhost:5000/api/health
+
+Expected:
+HTTP/1.1 200 OK
+{"status":"ok","student":"2412111060"}
+
+2. GET /api/students
+Command:
+curl -i http://localhost:5000/api/students
+
+Expected:
+HTTP/1.1 200 OK
+Danh sach sinh vien duoc tra ve.
+
+3. GET /api/students?lop=CNTT01
+Command:
+curl -i "http://localhost:5000/api/students?lop=CNTT01"
+
+Expected:
+HTTP/1.1 200 OK
+Tra ve SV001 va SV002.
+
+4. GET /api/students/SV001
+Command:
+curl -i http://localhost:5000/api/students/SV001
+
+Result:
+HTTP/1.1 200 OK
+{"ho_ten":"Nguyen Van An","id":"SV001","lop":"CNTT01","mssv":"2412111001"}
+
+5. GET /api/students/SV999
+Command:
+curl -i http://localhost:5000/api/students/SV999
+
+Result:
+HTTP/1.1 404 NOT FOUND
+{"error":"Student not found"}
+
+6. POST /api/students - missing diem
+Command:
+curl -i -X POST http://localhost:5000/api/students -H "Content-Type: application/json" -d "{\"mssv\":\"2412111061\",\"ho_ten\":\"Test Student\",\"lop\":\"CNTT03\"}"
+
+Result:
+HTTP/1.1 400 BAD REQUEST
+{"error":"Missing field: diem"}
+
+7. POST /api/students - diem = 11
+Command:
+curl -i -X POST http://localhost:5000/api/students -H "Content-Type: application/json" -d "{\"mssv\":\"2412111061\",\"ho_ten\":\"Test Student\",\"lop\":\"CNTT03\",\"diem\":11}"
+
+Result:
+HTTP/1.1 400 BAD REQUEST
+{"error":"diem must be between 0 and 10"}
+
+8. POST /api/students - valid
+Command:
+curl -i -X POST http://localhost:5000/api/students -H "Content-Type: application/json" -d "{\"mssv\":\"2412111061\",\"ho_ten\":\"Test Student\",\"lop\":\"CNTT03\",\"diem\":8.5}"
+
+Result:
+HTTP/1.1 201 CREATED
+{"diem":8.5,"ho_ten":"Test Student","id":"SV006","lop":"CNTT03","mssv":"2412111061"}
