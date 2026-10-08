@@ -1,0 +1,33 @@
+[
+  {
+    "id": "SV001",
+    "mssv": "2412111001",
+    "ho_ten": "Nguyen Van An",
+    "lop": "CNTT01"
+  },
+  {
+    "id": "SV002",
+    "mssv": "2412111002",
+    "ho_ten": "Tran Van Binh",
+    "lop": "CNTT01"
+  },
+  {
+    "id": "SV003",
+    "mssv": "2412111003",
+    "ho_ten": "Le Van Cuong",
+    "lop": "CNTT02"
+  },
+  {
+    "id": "SV004",
+    "mssv": "2412111004",
+    "ho_ten": "Pham Van Dung",
+    "lop": "CNTT02"
+  },
+  {
+    "id": "SV005",
+    "mssv": "2412111005",
+    "ho_ten": "Vo Van Em",
+    "lop": "CNTT03"
+  }
+]
+

@@ -1,0 +1,6 @@
+logs/
+*.tar.gz
+__pycache__/
+node_modules/
+.env
+
