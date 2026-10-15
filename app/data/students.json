@@ -28,6 +28,12 @@
     "mssv": "2412111005",
     "ho_ten": "Vo Van Em",
     "lop": "CNTT03"
+  },
+  {
+    "id": "SV006",
+    "mssv": "2412111061",
+    "ho_ten": "Test Student",
+    "lop": "CNTT03",
+    "diem": 8.5
   }
 ]
-
