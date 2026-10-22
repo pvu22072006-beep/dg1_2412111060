@@ -1,0 +1,20 @@
+*   fa99442 docs: resolve README merge conflict
+|\  
+| * 6f6e50e docs: add README on develop
+| *   7aae77b Merge pull request #3 from pvu22072006-beep/feature/docker
+| |\  
+| | * 0f6d558 test: verify persistent student data
+| | * af0d4cc feat: add Docker Compose and Nginx deployment
+| |/  
+| *   04aebb2 feat: merge web application into develop
+| |\  
+* | | ba58d31 docs: add README on main
+* | |   4f3ec14 Merge pull request #1 from pvu22072006-beep/feature/web-app
+|\ \ \  
+| |/ /  
+|/| /   
+| |/    
+| * a08938e test: add API tests and sample student
+| * 73c27a3 feat: add Flask web application
+|/  
+* fa916b4 chore: init project
