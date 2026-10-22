@@ -1,3 +1,3 @@
-# DG1 - Main Branch - 2412111060
+# DG1 – Phong Vu – 2412111060
 
-Project DG1 for Linux and Docker coursework.
+Project DG1: Linux, Git, Flask, Docker Compose and Nginx.

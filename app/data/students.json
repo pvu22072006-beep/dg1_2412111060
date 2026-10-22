@@ -35,5 +35,12 @@
     "ho_ten": "Test Student",
     "lop": "CNTT03",
     "diem": 8.5
+  },
+  {
+    "id": "SV007",
+    "mssv": "2412111999",
+    "ho_ten": "Test Persist",
+    "lop": "CNTT03",
+    "diem": 9.0
   }
 ]
